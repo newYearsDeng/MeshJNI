@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.northmeter.meshble.northmeter.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <Button
+        android:id="@+id/button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蓝牙测试"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.northmeter.meshble.northmeter.widget.NoScrollViewPager
+            android:id="@+id/vp_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/radio_group"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+             />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:background="@drawable/mesh_icon_title"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:paddingBottom="12px"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_button_0"
+                style="@style/radioButton_style"
+                android:drawableTop="@drawable/selector_mesh_list"
+                android:text="列表"
+                />
+            <RadioButton
+                android:id="@+id/radio_button_1"
+                style="@style/radioButton_style"
+                android:drawableTop="@drawable/selector_mesh_since"
+                android:text="情景"
+                />
+            <RadioButton
+                android:id="@+id/radio_button_2"
+                style="@style/radioButton_style"
+                android:drawableTop="@drawable/selector_mesh_share"
+                android:text="分享"
+                />
+            <RadioButton
+                android:id="@+id/radio_button_3"
+                style="@style/radioButton_style"
+                android:drawableTop="@drawable/selector_mesh_user"
+                android:text="我的"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

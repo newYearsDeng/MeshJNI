@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal">
+
+    <include layout="@layout/activity_title_layout"/>
+
+    <LinearLayout
+        android:layout_marginTop="50px"
+        android:layout_width="650px"
+        android:orientation="vertical"
+        android:layout_height="916px"
+        android:gravity="center_horizontal"
+        android:background="@drawable/mesh_add_midback">
+
+        <ImageView
+            android:id="@+id/iv_middle"
+            android:layout_width="348px"
+            android:layout_height="298px"
+            android:src="@drawable/mesh_add_midicon"
+            android:layout_marginTop="116px"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="咦~,还没有准备呢~"
+            android:textColor="#c1c1c1"
+            android:textSize="30px"
+            android:layout_marginTop="31px"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="68px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btn_scan"
+                android:layout_width="170px"
+                android:layout_height="64px"
+                android:layout_gravity="left|center_vertical"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mesh_add_scan" />
+
+            <ImageButton
+                android:id="@+id/btn_input"
+                android:layout_width="170px"
+                android:layout_height="64px"
+                android:layout_marginLeft="70px"
+                android:layout_gravity="left|center_vertical"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mesh_add_input" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_share"
+            android:layout_width="170px"
+            android:layout_height="64px"
+            android:layout_marginTop="40px"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mesh_add_share" />
+
+    </LinearLayout>
+
+</LinearLayout>

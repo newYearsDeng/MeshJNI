@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_login_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mesh_login_background"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <!--Logo-->
+    <ImageView
+        android:id="@+id/iv_login_logo_1"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="126px"
+        android:src="@drawable/mesh_login_logo_1" />
+
+    <ImageView
+        android:id="@+id/iv_login_logo_2"
+        android:layout_width="294px"
+        android:layout_height="76px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28px"
+        android:src="@drawable/mesh_login_logo_2" />
+    <!--账号框-->
+    <RelativeLayout
+        android:id="@+id/relative_acount"
+        android:layout_width="612px"
+        android:layout_height="86px"
+        android:layout_marginTop="71px"
+        android:background="@drawable/mesh_login_username"
+        android:paddingLeft="106px">
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:hint="用户名/手机号/邮箱"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColorHint="#c9caca" />
+    </RelativeLayout>
+
+
+    <!--密码框-->
+    <RelativeLayout
+        android:layout_width="612px"
+        android:layout_height="86px"
+        android:layout_marginTop="36px"
+        android:background="@drawable/mesh_login_password"
+        android:paddingLeft="106px">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/iv_air"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textColorHint="#c9caca" />
+
+        <ImageView
+            android:id="@+id/iv_air"
+            android:layout_width="50px"
+            android:layout_height="31px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="42px"
+            android:src="@drawable/mesh_login_air" />
+
+    </RelativeLayout>
+
+
+    <!--登录-->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="612px"
+        android:layout_height="86px"
+        android:layout_marginTop="62px"
+        android:scaleType="fitCenter"
+        android:background="@drawable/mesh_login_button"
+        android:textSize="38px"
+        android:text="登 录"/>
+
+    <LinearLayout
+        android:layout_width="612px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_forget_passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:inputType="number"
+            android:text="忘记密码"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25px"
+            android:layout_marginRight="25px"
+            android:src="@drawable/mesh_login_logo_3" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:inputType="number"
+            android:text="快速注册"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71px"
+        android:src="@drawable/mesh_login_logo_4" />
+
+    <LinearLayout
+        android:layout_width="612px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="92px"
+            android:layout_height="92px"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="88px"
+            android:src="@drawable/mesh_login_qq" />
+
+        <ImageView
+            android:layout_width="92px"
+            android:layout_height="92px"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/mesh_login_wx" />
+
+        <ImageView
+            android:layout_width="92px"
+            android:layout_height="92px"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/mesh_login_zfb"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
